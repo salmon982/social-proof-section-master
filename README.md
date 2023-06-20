@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [](https://your-solution-url.com)
-- Live Site URL: [Live Site](https://your-live-site-url.com)
+- Solution URL: [Flexbox Social Proof ](https://www.frontendmentor.io/solutions/flexbox-social-proof-lZA5yIIMFH)
+- Live Site URL: [Live Site](https://flexbox-social-proof.netlify.app/)
 
 ## My process
 
