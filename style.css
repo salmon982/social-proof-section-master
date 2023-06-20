@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
+
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 15px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8.25em 11em;
+}
+
+.top-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  color: var(--very-dark-magenta);
+  font-weight: 700;
+  font-size: 3.75em;
+  letter-spacing: -0.04em;
+  line-height: 0.84em;
+  padding-right: 2em;
+}
+
+.description {
+  color: var(--dark-grayish-magenta);
+  font-size: 1.25em;
+  font-weight: 500;
+  line-height: 1.25em;
+  letter-spacing: -0.025em;
+  padding: 1.5em 4em 0 0;
+}
+
+.stars-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.5em 6em 0 6em;
+}
+
+.star-review {
+  background-color: var(--light-grayish-magenta);
+  width: 93%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3em 3.25em 1.3em 1.5em;
+  margin: 0.65em 0;
+  border-radius: 0.5em;
+}
+
+.star-review:nth-child(2) {
+  margin-left: 5em;
+}
+
+.star-review:nth-child(3) {
+  margin-left: 10em;
+}
+
+.star-description {
+  font-weight: 700;
+  font-size: 1.1em;
+  color: var(--very-dark-magenta);
+  margin-left: 1em;
+}
+
+img {
+  padding: 0 0.25em;
+}
+
+.bottom-container {
+  margin-top: 4em;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.review-card {
+  background-color: var(--very-dark-magenta);
+  padding: 2.5em 2.25em 2.5em 2em;
+  border-radius: 0.5em;
+  margin: 0 1em;
+}
+
+.review-card:nth-child(2) {
+  margin-top: 1em;
+}
+
+.review-card:nth-child(3) {
+  margin-top: 2em;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 1.7em;
+}
+
+.user-image {
+  width: 15%;
+  aspect-ratio: 1/1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.user-image.one {
+  background-image: url('./images/image-colton.jpg');
+}
+
+.user-image.two {
+  background-image: url('./images/image-irene.jpg');
+}
+
+.user-image.three {
+  background-image: url('./images/image-anne.jpg');
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 1.25em;
+}
+
+.name {
+  font-size: 1.2em;
+  color: var(--white);
+  font-weight: 600;
+  padding-bottom: 0.2em;
+}
+
+.verified {
+  font-size: 1.1em;
+  color: var(--soft-pink);
+  font-size: 500;
+}
+
+.review-text {
+  color: var(--white);
+  line-height: 1.3em;
+  font-size: 1.1em;
+}
+
+@media all and (orientation: portrait) and (max-width: 500px) {
+  main {
+    height: unset;
+    padding: 5.5em 1.25em;
+  }
+
+  .top-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .title {
+    font-size: 2.75em;
+    line-height: 0.75em;
+    letter-spacing: -0.05em;
+    padding: 0 1em 0.8em 1em;
+  }
+
+  .description {
+    letter-spacing: 0;
+    padding: 0;
+    font-size: 1.2em;
+  }
+
+  .stars-reviews {
+    margin-top: 3.25em;
+    padding: 0;
+  }
+
+  .star-review {
+    flex-direction: column;
+    padding: 1.25em 0;
+    margin: 0;
+    margin-bottom: 1em;
+    justify-content: space-around;
+  }
+
+  .star-review:nth-child(2) {
+    margin-left: 0;
+  }
+
+  .star-review:nth-child(3) {
+    margin-left: 0;
+  }
+
+  .star-description {
+    padding-top: 0.5em;
+  }
+
+  .bottom-container {
+    margin-top: 0;
+  }
+
+  .reviews {
+    flex-direction: column;
+    margin-top: 1em;
+    align-items: center;
+  }
+
+  .review-card {
+    padding: 2.5em 2.5em 2em 2.5em;
+    margin: 0.5em 0;
+  }
+
+  .review-text {
+    line-height: 1.5em;
+  }
+}
